@@ -11,8 +11,8 @@ const App = ()=>{
     const [numero, setNumero] = useState(10)
 
     function handleNumero(){
-        const novoNumero = Math.floor(Math.ramdom() * 10);
-        setNumero(novoNumero)
+        const novoNumero = Math.floor(Math.random() * 10);
+        setNumero(novoNumero + novoNumero)
     }
     return(
 
