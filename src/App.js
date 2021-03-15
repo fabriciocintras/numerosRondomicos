@@ -17,9 +17,9 @@ const App = ()=>{
     return(
 
         <SafeAreaView style={style.container}>
-            <Text>{numero}</Text>
+            <Text style={style.botao}>{numero}</Text>
             <TouchableOpacity onPress={handleNumero} >
-                <Text>Gerar numero</Text>  
+                <Text style={style.botao2}>Gerar numero</Text>  
             </TouchableOpacity>
         </SafeAreaView>
         
@@ -27,10 +27,23 @@ const App = ()=>{
 }
 const style = StyleSheet.create({
     container:{
-        backgroundColor:'red',
+        backgroundColor:'#ffffee',
         flex:1,
         justifyContent:'center',
         alignItems:'center'
+    },
+    botao:{
+        fontWeight:"bold",
+        fontSize:38,
+    },
+    botao2:{
+        fontSize:20,
+        backgroundColor:"#111111",
+        color:"#eeeeee",
+        paddingHorizontal:15,
+        paddingVertical:10,
+        borderRadius:6,
+        marginTop:10
     }
 })
 
